@@ -1,7 +1,7 @@
-#input for adding
-a = int(input("enter your 1st number :"))
-b = int(input("enter your 2nd number :"))
-print("sum =", a+b)
+# #input for adding
+# a = int(input("enter your 1st number :"))
+# b = int(input("enter your 2nd number :"))
+# print("sum =", a+b)
 
 #Side of a square and claculate it's area :-
 #side = int (input("enter sqare side : "))
@@ -22,6 +22,18 @@ print("sum =", a+b)
 #    print(False)
 
 #For true and false :-
-a = int(input("enter your 1st number :"))
-b = int(input("enter your 2nd number :"))
-print (a>=b)
+# a = int(input("enter your 1st number :"))
+# b = int(input("enter your 2nd number :"))
+# print (a>=b)
+
+
+
+text = "apple banana apple orange banana apple"
+words = text.split()
+freq = {}
+for word in words :
+    if word in freq:
+        freq[word] += 1
+    else:
+        freq[word] = 1
+print(freq)
