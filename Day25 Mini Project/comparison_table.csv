@@ -1,0 +1,6 @@
+model,CV Accuracy,Final Test Accuracy
+Dummy Baseline,0.915,
+Plain Logistic Regression,0.9602,
+L2/Ridge Logistic Regression,0.9602,
+L1/Lasso Logistic Regression,0.9602,
+Tuned L1 Pipeline,0.9605,0.9601
