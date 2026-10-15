@@ -1,0 +1,7 @@
+Requirement Text
+
+pandas
+numpy
+matplotlib
+scikit-learn
+jupyter 
