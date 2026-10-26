@@ -113,3 +113,26 @@ The cross-validation spread indicates how much performance varies across the val
 - The dataset may contain selection effects or repeated customer observations.
 - Predictors must be available at the time the bank makes its outreach decision.
 - A better AP score does not by itself demonstrate higher business profit or campaign effectiveness.
+
+
+## Day 43 — Feature Engineering Results
+
+### Objective
+
+The objective was to test whether engineered features improve the Bank Marketing model's Average Precision (AP) score.
+
+### Evaluation Method
+
+Six candidate features were evaluated individually using cross-validation. Their gains were compared against the Day 42 score spread of `0.042`.
+
+### Results
+
+The individual feature gains were approximately between `-0.0001` and `+0.0002`. These changes are much smaller than the Day 42 score spread.
+
+Therefore, no candidate feature demonstrated a clear improvement beyond the observed variation in model performance. The tested features were classified as inconclusive rather than being treated as proven improvements or meaningful regressions.
+
+### Conclusion
+
+The feature engineering experiments did not establish a reliable improvement over the existing model. The current model remains the reference point, and no engineered feature is considered a confirmed improvement at this stage.
+
+The combined-feature experiment should only be reported if it was actually performed. Further evaluation may be needed before deciding whether any candidate feature should be retained.
