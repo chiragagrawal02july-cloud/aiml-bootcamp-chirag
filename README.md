@@ -136,3 +136,38 @@ Therefore, no candidate feature demonstrated a clear improvement beyond the obse
 The feature engineering experiments did not establish a reliable improvement over the existing model. The current model remains the reference point, and no engineered feature is considered a confirmed improvement at this stage.
 
 The combined-feature experiment should only be reported if it was actually performed. Further evaluation may be needed before deciding whether any candidate feature should be retained.
+
+
+## Day 44 — Tuning and Error Analysis
+
+### Model Comparison
+
+| Model | Holdout Average Precision |
+|---|---:|
+| Strong Logistic Regression | 0.2142 |
+| Untuned Random Forest | 0.4284 |
+| Tuned Random Forest | 0.4580 |
+
+### Tuning Decision
+
+- Tuning gain: `0.0296` AP.
+- Three-split AP spread: `0.0225`.
+- The observed tuning gain is greater than the measured split-to-split spread.
+- This is encouraging evidence, but three splits do not guarantee that the improvement will generalize.
+
+### Final Model Decision
+
+The Tuned Random Forest was selected as the current final candidate because it achieved the highest reported holdout AP of `0.4580`.
+
+### Trade-offs and Limitations
+
+- Average Precision measures ranking quality, not campaign profit directly.
+- A threshold of `0.5` is not automatically the best business threshold.
+- False positives and false negatives can have different business costs.
+- The `duration` feature was excluded because it is unavailable before the call.
+- The model should be validated on future campaign data before deployment.
+
+### Next Step
+
+Complete the project handover by verifying dependencies, documenting run instructions, testing reproducibility, and preparing the final report and presentation.
+
