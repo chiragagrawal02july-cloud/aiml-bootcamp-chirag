@@ -1,2 +1,4 @@
-myenv/*
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/myenv/*
 .ipynb_checkpoints/data/
